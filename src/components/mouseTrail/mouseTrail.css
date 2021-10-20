@@ -1,31 +1,31 @@
 .cursor {
-    height: 20px; width: 20px;
-    border-radius: 20px;
-    z-index: 100;
-    pointer-events: none;
+	height: 20px; width: 20px;
+	border-radius: 20px;
+	z-index: 100;
+	pointer-events: none;
 }
 
 .trail {
-    height: 30px; width: 30px;
-    border-radius: 30px;
-    border-style: solid;
-    border-width: 1px;
-    z-index: 100;
-    pointer-events: none;
+	height: 30px; width: 30px;
+	border-radius: 30px;
+	border-style: solid;
+	border-width: 1px;
+	z-index: 100;
+	pointer-events: none;
 }
 
 .cursor.light {
-    background: white;
+	background: white;
 }
 
 .trail.light {
-    border-color: white;
+	border-color: white;
 }
 
 .cursor.dark {
-    background: black;
+	background: black;
 }
 
 .trail.dark {
-    border-color: black;
+	border-color: black;
 }

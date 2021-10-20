@@ -1,65 +1,50 @@
 /*
 .App {
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+	background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 */
-
 .App {
-  background-color: rgb(255, 255, 255);
-  height: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 100%;
 }
-
 .paragraph {
-  font-size: 20px;
-  width: 60%;
-  word-spacing: 1px;
-  letter-spacing: 0.5px;
-  line-height: 2.5;
-  margin: 0 auto;
-  border-radius: 1px;
+	font-size: 20px;
+	width: 60%;
+	word-spacing: 1px;
+	letter-spacing: 0.5px;
+	line-height: 2.5;
+	margin: 0 auto;
+	border-radius: 1px;
 }
-
 .indent {
-  margin-left: 30%;
+	margin-left: 30%;
 }
-
 div {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-size: 20px;
 }
-
 html {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
-
-
 html.enabled::-webkit-scrollbar {
-  width: 15px;
+	width: 15px;
 }
-
 html.disabled {
-  overflow-y: hidden;
+	overflow-y: hidden;
 }
-
-
-
 html.enabled {
-  overflow-y: auto;
+	overflow-y: auto;
 }
-
 html::-webkit-scrollbar-track {
-  background: #f1f1f1;
+	background: #f1f1f1;
 }
-
 /* Handle */
 html::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 20px;
-  box-shadow: inset 0 0 5px rgb(39, 39, 39);
+	background: #888;
+	border-radius: 20px;
+	box-shadow: inset 0 0 5px rgb(39, 39, 39);
 }
-
 /* Handle on hover */
 html::-webkit-scrollbar-thumb:hover {
-  background: #555;
+	background: #555;
 }
-
