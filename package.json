@@ -27,7 +27,7 @@
 		"three": "^0.132.2",
 		"universal-cookie": "^4.0.4",
 		"vivus": "^0.4.6",
-		"web-vitals": "^1.0.1"
+		"web-vitals": "^2.1.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",
