@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Tip.css";
 import Lightbulb from "../images/lightbulb.png";
+
 class Tip extends Component {
   render() {
     return (

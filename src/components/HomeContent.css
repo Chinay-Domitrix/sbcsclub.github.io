@@ -1,136 +1,137 @@
 
 .center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 
 #home-title {
-    color: white;
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    font-size: 6vmin;
-    font-weight: 700;
-    outline: none;
-    white-space: nowrap;
-    opacity: 0;
-    animation-timing-function: linear;
+	animation-timing-function: linear;
+	color: white;
+	font-size: 6vmin;
+	font-weight: 700;
+	opacity: 0;
+	outline: none;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	white-space: nowrap;
 
 
 }
+
 #home-title.transition {
-    
-    animation: transition_in 2.2s;
-    animation-delay: 2s;
+
+	animation: transition_in 2.2s;
+	animation-delay: 2s;
 }
+
 #home-title.after {
-    opacity: 1;    
-    color:#ffffff;
-    transform: scale(1, 1);
+	color: white;
+	opacity: 1;
+	transform: scale(1, 1);
 }
 
 #description {
-  width: 60%;
-  height: 800px;
-  color: #000000;
-  position: absolute;
-  text-align: center;
-  font-size: clamp(1.5rem, 3vmin, 3vmin);
-  top: 80%;
-  opacity: 0;
+	color: black;
+	font-size: clamp(1.5rem, 3vmin, 3vmin);
+	height: 800px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 80%;
+	width: 60%;
 }
 
 @media screen and (max-width: 800px) {
-  #description {
-    width: 100%; 
-    padding: 10px;
-  }
+	#description {
+		padding: 10px;
+		width: 100%;
+	}
 }
 
 #description.transition {
-  animation: transition_in_2 1s;
+	animation: transition_in_2 1s;
 }
 
 #description.after {
-  opacity: 1;
-  color: #000000;
-  transform: scale(1,1);
+	color: black;
+	opacity: 1;
+	transform: scale(1, 1);
 }
 
 
 #workshops-description {
-  height: 800px;
-  opacity: 1;
-  text-align: center;
+	height: 800px;
+	opacity: 1;
+	text-align: center;
 }
 
 #workshops-title {
-  font-size: 2.5rem;
-  color: black;
-  font-weight: 500;
-  position: absolute;
-  top: 150%;
+	color: black;
+	font-size: 2.5rem;
+	font-weight: 500;
+	position: absolute;
+	top: 150%;
 }
 
 #workshops-list {
-  font-size: 2vmin;
-  color: black;
-  position: absolute;
-  top: 160%;
+	color: black;
+	font-size: 2vmin;
+	position: absolute;
+	top: 160%;
 }
 
 @keyframes transition_in {
-    0% {
-      text-shadow: 100px 100px 10px #aaa;
-      color:#b1b1b1;
-      transform: scale(1.2, 1.2);
-    }
-    30% {
-      text-shadow: 20px 20px 10px #aaa;
-      color:#aaaaaa;
-      transform: scale(1.2, 1.2);
-    }
-    35% {
-       color:#f3f3f3;
-    }
-    40% {
-      text-shadow: none;
-      transform: scale(1.1, 1.1);
-    }
-    90% {    
-      color: #ffffff;
-    }
-    100% {
-      opacity: 1;    
-      color:#ffffff;
-      transform: scale(1, 1);
-    }
-    
-  }
+	0% {
+		text-shadow: 100px 100px 10px #aaa;
+		color: #b1b1b1;
+		transform: scale(1.2, 1.2);
+	}
+	30% {
+		text-shadow: 20px 20px 10px #aaa;
+		color: #aaa;
+		transform: scale(1.2, 1.2);
+	}
+	35% {
+		color: #f3f3f3;
+	}
+	40% {
+		text-shadow: none;
+		transform: scale(1.1, 1.1);
+	}
+	90% {
+		color: white;
+	}
+	100% {
+		opacity: 1;
+		color: white;
+		transform: scale(1, 1);
+	}
+
+}
 
 
-  @keyframes transition_in_2 {
-    0% {
-      transform: scale(1.1, 1.1);
-      opacity: 0;
-    }
+@keyframes transition_in_2 {
+	0% {
+		transform: scale(1.1, 1.1);
+		opacity: 0;
+	}
 
-    100% {
-      opacity: 1;    
-      transform: scale(1, 1);
-    }
-    
-  }
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
 
+}
 
 
 .grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 10px;
-  gap: 25px;
-  max-width: 1000px;
+	display: grid;
+	gap: 25px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	max-width: 1000px;
+	padding: 10px;
+	width: 100%;
 }

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Credit.css";
 
 //components
-
 import Tip from "../../components/Tip.js";
 
 let creditTip =
