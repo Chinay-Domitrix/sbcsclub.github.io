@@ -1,23 +1,21 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import DeleteIcon from "@mui/icons-material/Delete";
 import {
-  Grid,
-  Card,
-  CardContent,
-  CardActions,
-  CardHeader,
-  Typography,
-  IconButton,
   Button,
-} from "@material-ui/core";
-import DeleteIcon from "@material-ui/icons/Delete";
-
-import AddCircleIcon from "@material-ui/icons/AddCircle";
-import firebase from "firebase/app";
-import "firebase/auth";
-import "./Admin.css";
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
+import React, { Component } from "react";
+import { Navigate } from "react-router-dom";
 import Cookies from "universal-cookie";
+import firebase from "../../firebaseClient";
+import "./Admin.css";
+
 const cookies = new Cookies();
 
 const grid = {
@@ -32,7 +30,7 @@ const section = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "#fff",
+  backgroundColor: "white",
 };
 
 class Input extends Component {
@@ -264,12 +262,12 @@ export default class App extends Component {
         this.setState({ admin: 2 });
       }
     }
-    if (this.state.admin === 1) {
-      return <Admin />;
-    } else if (this.state.admin === 2) {
-      return <Redirect to="/" />;
-    } else {
-      return <div>Loading...</div>;
-    }
+    return this.state.admin === 1 ? (
+      <Admin />
+    ) : this.state.admin === 2 ? (
+      <Navigate to="/" replace />
+    ) : (
+      <div>Loading...</div>
+    );
   }
 }
