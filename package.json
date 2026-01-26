@@ -9,7 +9,7 @@
     "@mui/material": "^5.18.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+    "@testing-library/user-event": "^14.6.1",
     "@tweenjs/tween.js": "^25.0.0",
     "animejs": "^3.2.2",
     "bootstrap": "^5.3.8",
